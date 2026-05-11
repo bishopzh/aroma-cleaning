@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aroma Cleaning — профессиональный клининг в Астане</title>
+  <meta name="description" content="Профессиональный клининг в Астане. Генеральная уборка, после ремонта, химчистка мебели. Без предоплаты, гарантия качества. WhatsApp +7 702 936 7678." />
+  <meta property="og:title" content="Aroma Cleaning — чистота за 3 часа или вернём деньги" />
+  <meta property="og:description" content="Клининг в Астане: приедем в день заказа, безопасные средства для детей и животных. @aroma__cleaning" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_KZ" />
+  <meta name="theme-color" content="#00c896" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f7f9f8;
+      --bg-2: #eef3f0;
+      --surface: #ffffff;
+      --surface-2: #f0f5f2;
+      --primary: #00c896;
+      --primary-dark: #00a07a;
+      --primary-glow: rgba(0, 200, 150, 0.18);
+      --secondary: #1a1a2e;
+      --text: #1e2d26;
+      --text-muted: #6b8378;
+      --border: #d6e8e0;
+      --badge: #e6fff8;
+      --danger: #e53935;
+      --radius: 12px;
+      --radius-lg: 20px;
+      --shadow: 0 4px 24px rgba(0, 200, 150, 0.08);
+      --shadow-hover: 0 12px 40px rgba(0, 200, 150, 0.15);
+      --font-head: "Syne", system-ui, sans-serif;
+      --font-body: "Inter", system-ui, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { max-width: 100%; height: auto; }
+    a { color: var(--primary-dark); }
+
+    .container {
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Promo strip */
+    .promo-strip {
+      background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+      color: #fff;
+      text-align: center;
+      padding: 10px 16px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      transition: background 0.3s, backdrop-filter 0.3s, box-shadow 0.3s;
+      border-bottom: 1px solid transparent;
+    }
+    .navbar.scrolled {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+      border-bottom-color: var(--border);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 0;
+    }
+    .logo {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: var(--secondary);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+    .logo span { color: var(--primary); }
+    .nav-links {
+      display: none;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      font-size: 0.9375rem;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--primary); }
+
+    @media (min-width: 900px) {
+      .nav-links { display: flex; }
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: none;
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 0.9375rem;
+      text-decoration: none;
+      border-radius: var(--radius);
+      padding: 14px 24px;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s, color 0.2s;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px var(--primary-glow);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--secondary);
+      border: 2px solid var(--border);
+    }
+    .btn-outline:hover {
+      border-color: var(--primary);
+      color: var(--primary-dark);
+    }
+    .btn-lg { padding: 16px 32px; border-radius: var(--radius); }
+    .btn-white {
+      background: #fff;
+      color: var(--primary-dark);
+    }
+    .btn-white:hover {
+      background: var(--badge);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      padding: 48px 0 72px;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse 80% 60% at 20% 50%, #d4fff4 0%, transparent 60%),
+        radial-gradient(ellipse 70% 50% at 80% 20%, #e8f5ff 0%, transparent 60%),
+        var(--bg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+    }
+    .hero-grid {
+      display: grid;
+      gap: 40px;
+      align-items: center;
+    }
+    @media (min-width: 900px) {
+      .hero-grid { grid-template-columns: 1.05fr 0.95fr; gap: 48px; }
+    }
+    .hero-card {
+      background: rgba(255, 255, 255, 0.65);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      box-shadow: var(--shadow);
+    }
+    @media (min-width: 600px) {
+      .hero-card { padding: 36px 32px; }
+    }
+    .hero h1 {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: clamp(1.85rem, 5vw, 2.75rem);
+      line-height: 1.1;
+      color: var(--secondary);
+      margin: 0 0 16px;
+      letter-spacing: -0.03em;
+    }
+    .hero h1 .accent {
+      color: var(--primary);
+      display: block;
+    }
+    .hero-lead {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      margin: 0 0 28px;
+      max-width: 520px;
+    }
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 20px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+    .trust-row span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .trust-row svg {
+      flex-shrink: 0;
+      color: var(--primary);
+    }
+
+    /* Stats */
+    .stats {
+      padding: 40px 0;
+      background: var(--surface);
+      border-block: 1px solid var(--border);
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      text-align: center;
+    }
+    @media (min-width: 700px) {
+      .stats-grid { grid-template-columns: repeat(4, 1fr); }
+    }
+    .stat-num {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      color: var(--primary);
+      line-height: 1.1;
+    }
+    .stat-label {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+
+    /* Timer */
+    .timer-section {
+      padding: 48px 0;
+      background: var(--bg-2);
+    }
+    .timer-box {
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .timer-label {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    .timer-display {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: clamp(1.25rem, 4vw, 1.75rem);
+      color: var(--secondary);
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
+    }
+    .timer-offer {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text);
+      margin: 0;
+    }
+
+    /* Section */
+    .section {
+      padding: 64px 0;
+    }
+    .section-alt { background: var(--bg-2); }
+    .section-head {
+      max-width: 640px;
+      margin-bottom: 40px;
+    }
+    .section-head h2 {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: clamp(1.65rem, 4vw, 2.25rem);
+      color: var(--secondary);
+      margin: 0 0 12px;
+      letter-spacing: -0.02em;
+    }
+    .section-head p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* Pain / solution */
+    .pain-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      background: var(--surface);
+    }
+    .pain-table tr:not(:last-child) td { border-bottom: 1px solid var(--border); }
+    .pain-table td {
+      padding: 18px 16px;
+      font-size: 0.9375rem;
+      vertical-align: middle;
+    }
+    @media (min-width: 640px) {
+      .pain-table td { padding: 20px 24px; }
+    }
+    .pain-col {
+      color: var(--text-muted);
+      background: var(--surface-2);
+      width: 42%;
+    }
+    .arrow-col {
+      width: 36px;
+      text-align: center;
+      color: var(--primary);
+      font-weight: 700;
+      background: var(--surface);
+    }
+    .solve-col {
+      color: var(--primary-dark);
+      font-weight: 600;
+      background: var(--badge);
+    }
+
+    /* Service cards */
+    .cards-grid {
+      display: grid;
+      gap: 20px;
+    }
+    @media (min-width: 640px) {
+      .cards-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 1024px) {
+      .cards-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .cards-grid .card:nth-child(1) { transition-delay: 0.05s; }
+    .cards-grid .card:nth-child(2) { transition-delay: 0.1s; }
+    .cards-grid .card:nth-child(3) { transition-delay: 0.15s; }
+    .cards-grid .card:nth-child(4) { transition-delay: 0.2s; }
+    .cards-grid .card:nth-child(5) { transition-delay: 0.25s; }
+    .cards-grid .card:nth-child(6) { transition-delay: 0.3s; }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+    }
+    .card.hit {
+      border-color: var(--primary);
+      box-shadow: 0 4px 24px var(--primary-glow);
+    }
+    .card-badge {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    .card h3 {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: 1.125rem;
+      margin: 0 0 6px;
+      color: var(--secondary);
+    }
+    .card-price {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+    .card-sub {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      font-style: italic;
+      margin: 0 0 16px;
+      line-height: 1.5;
+    }
+    .accordion-btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: var(--text);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .accordion-btn:hover { background: var(--badge); }
+    .accordion-btn svg {
+      transition: transform 0.25s;
+      flex-shrink: 0;
+      color: var(--primary);
+    }
+    .accordion-btn[aria-expanded="true"] svg { transform: rotate(180deg); }
+    .accordion-panel {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.3s ease;
+    }
+    .accordion-panel.open { grid-template-rows: 1fr; }
+    .accordion-panel-inner {
+      min-height: 0;
+      overflow: hidden;
+    }
+    .accordion-panel ul {
+      margin: 12px 0 0;
+      padding-left: 20px;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* Guarantee */
+    .guarantee {
+      max-width: 560px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 2px solid var(--primary);
+      border-radius: var(--radius-lg);
+      padding: 36px 28px;
+      text-align: center;
+      box-shadow: 0 8px 32px var(--primary-glow);
+    }
+    .guarantee-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 20px;
+      color: var(--primary);
+    }
+    .guarantee h2 {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: 1.35rem;
+      color: var(--secondary);
+      margin: 0 0 16px;
+    }
+    .guarantee p {
+      margin: 0;
+      font-size: 1.05rem;
+      color: var(--text);
+    }
+
+    /* Tables */
+    .price-table-wrap {
+      overflow-x: auto;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      background: var(--surface);
+    }
+    .price-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 400px;
+    }
+    .price-table th,
+    .price-table td {
+      padding: 14px 18px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .price-table th {
+      background: var(--badge);
+      font-weight: 600;
+      font-size: 0.8125rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+    }
+    .price-table tr:last-child td { border-bottom: none; }
+    .price-table td:last-child {
+      font-weight: 600;
+      color: var(--primary-dark);
+      white-space: nowrap;
+    }
+    .table-note {
+      margin-top: 12px;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    .extras-grid {
+      display: grid;
+      gap: 12px 32px;
+    }
+    @media (min-width: 640px) {
+      .extras-grid { grid-template-columns: 1fr 1fr; }
+    }
+    .extra-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.9375rem;
+    }
+    .extra-item span:first-child { color: var(--text); }
+    .extra-item span:last-child {
+      font-weight: 600;
+      color: var(--primary-dark);
+      white-space: nowrap;
+    }
+
+    /* Form */
+    .form-section .form-card {
+      max-width: 640px;
+      margin: 0 auto;
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      padding: 32px 24px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+    @media (min-width: 600px) {
+      .form-section .form-card { padding: 40px 36px; }
+    }
+    .form-card h2 {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: 1.5rem;
+      margin: 0 0 8px;
+      color: var(--secondary);
+    }
+    .form-card .sub {
+      color: var(--text-muted);
+      margin: 0 0 28px;
+      font-size: 1rem;
+    }
+    .field { margin-bottom: 18px; }
+    .field label {
+      display: block;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      background: var(--bg);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .field textarea { min-height: 100px; resize: vertical; }
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-glow);
+    }
+    .field.error input,
+    .field.error select,
+    .field.error textarea {
+      border-color: var(--danger);
+      animation: shake 0.45s ease;
+    }
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20% { transform: translateX(-8px); }
+      40% { transform: translateX(8px); }
+      60% { transform: translateX(-6px); }
+      80% { transform: translateX(6px); }
+    }
+    .form-foot {
+      margin-top: 8px;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+    .form-foot strong { color: var(--primary-dark); }
+
+    /* Final CTA */
+    .final-cta {
+      padding: 64px 24px;
+      text-align: center;
+      background: linear-gradient(135deg, #00c896, #00a07a);
+      color: #fff;
+      border-radius: 0;
+    }
+    .final-cta h2 {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      margin: 0 0 12px;
+    }
+    .final-cta p {
+      margin: 0 0 28px;
+      opacity: 0.95;
+      font-size: 1.05rem;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--secondary);
+      color: rgba(255, 255, 255, 0.85);
+      padding: 48px 0 32px;
+    }
+    footer a { color: #9ae8d4; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    .footer-grid {
+      display: grid;
+      gap: 32px;
+    }
+    @media (min-width: 700px) {
+      .footer-grid { grid-template-columns: 1.2fr 1fr 1fr; }
+    }
+    .footer-brand {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+    }
+    .footer-brand span { color: var(--primary); }
+    .footer-col h4 {
+      font-size: 0.8125rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin: 0 0 14px;
+      color: rgba(255, 255, 255, 0.55);
+    }
+    .footer-col p,
+    .footer-col li { font-size: 0.9375rem; margin: 0 0 8px; }
+    .footer-col ul { list-style: none; padding: 0; margin: 0; }
+    .socials {
+      display: flex;
+      gap: 14px;
+      margin-top: 16px;
+    }
+    .socials a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.08);
+      transition: background 0.2s;
+    }
+    .socials a:hover { background: rgba(0, 200, 150, 0.25); text-decoration: none; }
+    .copyright {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      font-size: 0.8125rem;
+      color: rgba(255, 255, 255, 0.5);
+      text-align: center;
+    }
+
+    /* WA float */
+    .wa-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      background: #25d366;
+      color: #fff;
+      border-radius: 50px;
+      padding: 14px 22px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      font-size: 15px;
+      box-shadow: 0 6px 24px rgba(37, 211, 102, 0.45);
+      z-index: 9999;
+      text-decoration: none;
+      animation: waPulse 2.5s ease-in-out infinite;
+    }
+    .wa-float:hover { color: #fff; filter: brightness(1.05); }
+    @media (max-width: 480px) {
+      .wa-float span { display: none; }
+      .wa-float { padding: 14px; border-radius: 50%; }
+    }
+    @keyframes waPulse {
+      0%, 100% { box-shadow: 0 6px 24px rgba(37, 211, 102, 0.45); }
+      50% { box-shadow: 0 6px 40px rgba(37, 211, 102, 0.75); }
+    }
+
+    .icon-wa path { fill: currentColor; }
+  </style>
+</head>
+<body>
+  <div class="promo-strip">Первым 10 клиентам в этом месяце — скидка 15% на любую уборку</div>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="#">Aroma<span>Cleaning</span></a>
+      <ul class="nav-links">
+        <li><a href="#why">Почему мы</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#upholstery">Химчистка</a></li>
+        <li><a href="#form">Расчёт</a></li>
+      </ul>
+      <a class="btn btn-primary" href="https://wa.me/77029367678" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-card reveal">
+        <h1>Чистота за 3 часа — <span class="accent">или вернём деньги</span></h1>
+        <p class="hero-lead">Профессиональный клининг в Астане. Приедем в день заказа. Используем безопасные средства — безвредно для детей и животных.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" href="https://wa.me/77029367678" target="_blank" rel="noopener">Написать в WhatsApp</a>
+          <a class="btn btn-outline btn-lg" href="#form">Рассчитать стоимость</a>
+        </div>
+        <div class="trust-row">
+          <span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            Без предоплаты
+          </span>
+          <span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            Гарантия качества
+          </span>
+          <span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            Команда застрахована
+          </span>
+        </div>
+      </div>
+      <div class="hero-card reveal" style="transition-delay: 0.1s;">
+        <p style="margin:0 0 12px;font-weight:600;color:var(--secondary);">Кому подойдём</p>
+        <ul style="margin:0;padding-left:20px;color:var(--text-muted);line-height:1.8;font-size:0.9375rem;">
+          <li>Квартиры и дома любой площади</li>
+          <li>Уборка после ремонта и арендаторов</li>
+          <li>Офисы и коммерческие помещения</li>
+          <li>Химчистка диванов, кресел и матрасов</li>
+        </ul>
+        <p style="margin:20px 0 0;font-size:0.875rem;color:var(--text-muted);">Работаем по Астане. Ответим в течение нескольких минут.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="reveal">
+        <div class="stat-num"><span data-count="1055" data-suffix="+">0</span></div>
+        <div class="stat-label">клиентов</div>
+      </div>
+      <div class="reveal">
+        <div class="stat-num"><span data-count="3" data-suffix="">0</span></div>
+        <div class="stat-label">года на рынке</div>
+      </div>
+      <div class="reveal">
+        <div class="stat-num"><span data-count="98" data-suffix="%">0</span></div>
+        <div class="stat-label">довольных клиентов</div>
+      </div>
+      <div class="reveal">
+        <div class="stat-num"><span data-count="0" data-suffix=" ₸" data-prefix="">0</span></div>
+        <div class="stat-label">предоплаты</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="timer-section">
+    <div class="container">
+      <div class="timer-box reveal">
+        <div class="timer-label">Акция действует:</div>
+        <div class="timer-display" id="timer">00д : 00ч : 00м : 00с</div>
+        <p class="timer-offer">Закажи до конца недели — получи уборку балкона <strong>бесплатно</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="why">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Вы устали от… → Мы решаем это</h2>
+        <p>Понимаем типичные страхи — и закрываем их прозрачными условиями.</p>
+      </div>
+      <table class="pain-table reveal">
+        <tbody>
+          <tr>
+            <td class="pain-col">Клинеры, которые опаздывают</td>
+            <td class="arrow-col">→</td>
+            <td class="solve-col">Приезжаем точно в срок</td>
+          </tr>
+          <tr>
+            <td class="pain-col">Химия с резким запахом</td>
+            <td class="arrow-col">→</td>
+            <td class="solve-col">Безопасные эко-средства</td>
+          </tr>
+          <tr>
+            <td class="pain-col">Платишь — а грязь осталась</td>
+            <td class="arrow-col">→</td>
+            <td class="solve-col">Гарантия: переделаем бесплатно</td>
+          </tr>
+          <tr>
+            <td class="pain-col">Непонятно сколько будет стоить</td>
+            <td class="arrow-col">→</td>
+            <td class="solve-col">Фиксированная цена до начала</td>
+          </tr>
+          <tr>
+            <td class="pain-col">Чужие люди в квартире</td>
+            <td class="arrow-col">→</td>
+            <td class="solve-col">Проверенные, застрахованные мастера</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Услуги и цены</h2>
+        <p>Выберите формат уборки — в каждой карточке список того, что входит в работу.</p>
+      </div>
+      <div class="cards-grid">
+        <article class="card reveal">
+          <h3>Генеральная уборка</h3>
+          <div class="card-price">от 700 ₸/м²</div>
+          <p class="card-sub">«Уберём каждый угол — даже за холодильником»</p>
+          <button type="button" class="accordion-btn" aria-expanded="false" data-acc="g1">
+            Что входит
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-panel" id="panel-g1">
+            <div class="accordion-panel-inner">
+              <ul>
+                <li>Пыль со всех поверхностей, включая труднодоступные места</li>
+                <li>Кухня: фасады, столешница, плита снаружи, раковина</li>
+                <li>Санузлы: сантехника, зеркала, плитка на уровень рук</li>
+                <li>Полы во всех комнатах — влажная уборка</li>
+                <li>Мусор из контейнеров, базовая организация пространства</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <h3>После ремонта</h3>
+          <div class="card-price">от 800 ₸/м²</div>
+          <p class="card-sub">«Смоем цемент, краску и строительную пыль за 1 визит»</p>
+          <button type="button" class="accordion-btn" aria-expanded="false" data-acc="g2">
+            Что входит
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-panel" id="panel-g2">
+            <div class="accordion-panel-inner">
+              <ul>
+                <li>Снятие крупной строительной пыли со стен и потолков</li>
+                <li>Удаление следов краски и затирки с доступных поверхностей</li>
+                <li>Мытьё окон изнутри, подоконников и рам</li>
+                <li>Влажная уборка полов и плинтусов</li>
+                <li>Подготовка помещения к меблировке</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <h3>Влажная уборка</h3>
+          <div class="card-price">от 400 ₸/м²</div>
+          <p class="card-sub">«Свежесть каждую неделю — экономно и быстро»</p>
+          <button type="button" class="accordion-btn" aria-expanded="false" data-acc="g3">
+            Что входит
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-panel" id="panel-g3">
+            <div class="accordion-panel-inner">
+              <ul>
+                <li>Влажная протирка мебели и горизонтальных поверхностей</li>
+                <li>Кухня и санузлы — гигиеническая обработка</li>
+                <li>Полы с подходящим средством под покрытие</li>
+                <li>Вынос мусора, аккуратная укладка вещей по зонам</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <h3>После квартирантов</h3>
+          <div class="card-price">от 800 ₸/м²</div>
+          <p class="card-sub">«Вернём квартире первоначальный вид для новых жильцов»</p>
+          <button type="button" class="accordion-btn" aria-expanded="false" data-acc="g4">
+            Что входит
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-panel" id="panel-g4">
+            <div class="accordion-panel-inner">
+              <ul>
+                <li>Удаление бытовых загрязнений и жирных следов на кухне</li>
+                <li>Санузлы — глубокая чистка и дезинфекция доступных зон</li>
+                <li>Обработка дверных ручек, выключателей, плинтусов</li>
+                <li>Полы, пыль, базовая подготовка к сдаче или заселению</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <h3>Коммерческие помещения</h3>
+          <div class="card-price">от 800 ₸/м²</div>
+          <p class="card-sub">«Чистый офис = продуктивная команда»</p>
+          <button type="button" class="accordion-btn" aria-expanded="false" data-acc="g5">
+            Что входит
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-panel" id="panel-g5">
+            <div class="accordion-panel-inner">
+              <ul>
+                <li>Рабочие зоны, переговорные, ресепшн</li>
+                <li>Стеклянные перегородки и входные группы</li>
+                <li>Санузлы для сотрудников и гостей</li>
+                <li>График под ваш бизнес — до/после рабочего дня</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="card hit reveal">
+          <span class="card-badge">ПОПУЛЯРНЫЙ</span>
+          <h3>Всё включено</h3>
+          <div class="card-price">от 1200 ₸/м²</div>
+          <p class="card-sub">«Максимальный результат — ни о чём не думайте»</p>
+          <button type="button" class="accordion-btn" aria-expanded="false" data-acc="g6">
+            Что входит
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-panel" id="panel-g6">
+            <div class="accordion-panel-inner">
+              <ul>
+                <li>Генеральная уборка</li>
+                <li>Новые салфетки</li>
+                <li>Мытьё кухонного оборудования внутри и снаружи</li>
+                <li>Отпаривание штор</li>
+                <li>Эко-чистка мебели и матрасов парогенератором</li>
+                <li>Мытьё всех окон изнутри и снаружи</li>
+                <li>Дезинфекция санузлов парогенератором</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Гарантия качества</h2>
+        <p>Мы отвечаем за результат — не словами, а процессом переделки.</p>
+      </div>
+      <div class="guarantee reveal">
+        <svg class="guarantee-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+        <h2>Гарантия качества</h2>
+        <p>Если после уборки останется хоть одно замечание — мы вернёмся и всё исправим <strong>бесплатно</strong> в течение 24 часов.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="upholstery">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Химчистка мягкой мебели</h2>
+        <p>Актуальные ориентиры по цене. Точная стоимость — по фото изделия.</p>
+      </div>
+      <div class="price-table-wrap reveal">
+        <table class="price-table">
+          <thead>
+            <tr><th>Предмет</th><th>Цена</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Диван 2-местный</td><td>от 6 000 ₸</td></tr>
+            <tr><td>Диван 3-местный</td><td>от 9 000 ₸</td></tr>
+            <tr><td>Диван угловой (4 места)</td><td>от 12 000 ₸</td></tr>
+            <tr><td>Кресло</td><td>от 4 000 ₸</td></tr>
+            <tr><td>Стул</td><td>от 1 500 ₸</td></tr>
+            <tr><td>Пуф</td><td>от 2 000 ₸</td></tr>
+            <tr><td>Матрас детский</td><td>от 8 000 ₸</td></tr>
+            <tr><td>Матрас односпальный</td><td>от 10 000 ₸</td></tr>
+            <tr><td>Матрас двуспальный</td><td>от 12 000 ₸</td></tr>
+            <tr><td>Подушка</td><td>от 1 000 ₸</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note reveal">Точная стоимость — по фото изделия в WhatsApp.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="extras">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Дополнительные услуги</h2>
+        <p>Добавьте к заказу — согласуем в одном сообщении.</p>
+      </div>
+      <div class="extras-grid reveal">
+        <div>
+          <div class="extra-item"><span>Кухонный гарнитур внутри</span><span>5 000–7 000 ₸</span></div>
+          <div class="extra-item"><span>Мойка шкафов изнутри</span><span>3 000–5 000 ₸</span></div>
+          <div class="extra-item"><span>Духовой шкаф</span><span>5 000 ₸</span></div>
+          <div class="extra-item"><span>Вытяжка</span><span>3 000 ₸</span></div>
+          <div class="extra-item"><span>Холодильник</span><span>5 000 ₸</span></div>
+          <div class="extra-item"><span>Микроволновка</span><span>3 000 ₸</span></div>
+          <div class="extra-item"><span>Посудомоечная машина</span><span>4 000 ₸</span></div>
+        </div>
+        <div>
+          <div class="extra-item"><span>Эко-чистка</span><span>2 000–5 000 ₸</span></div>
+          <div class="extra-item"><span>Мойка окон снаружи</span><span>4 000–5 000 ₸</span></div>
+          <div class="extra-item"><span>Стирка + глажка штор с тюлем</span><span>6 000–8 000 ₸</span></div>
+          <div class="extra-item"><span>Балкон</span><span>5 000 ₸</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section form-section" id="form">
+    <div class="container">
+      <div class="form-card reveal">
+        <h2>Рассчитайте стоимость за 30 секунд</h2>
+        <p class="sub">Заполните — мы напишем точную цену в WhatsApp за 5 минут.</p>
+        <form id="leadForm" onsubmit="event.preventDefault(); sendToWhatsApp();">
+          <div class="field" id="field-name">
+            <label for="name">Имя *</label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="Как к вам обращаться" />
+          </div>
+          <div class="field" id="field-phone">
+            <label for="phone">Телефон *</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+7 700 000 00 00" />
+          </div>
+          <div class="field" id="field-service">
+            <label for="service">Тип услуги *</label>
+            <select id="service" name="service" required>
+              <option value="">Выберите услугу</option>
+              <option>Генеральная уборка</option>
+              <option>После ремонта</option>
+              <option>Влажная уборка</option>
+              <option>После квартирантов</option>
+              <option>Коммерческие помещения</option>
+              <option>Всё включено</option>
+              <option>Химчистка мебели</option>
+              <option>Другое / несколько услуг</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="area">Площадь, м²</label>
+            <input type="number" id="area" name="area" min="1" step="1" placeholder="Например, 65" />
+          </div>
+          <div class="field">
+            <label for="address">Адрес</label>
+            <input type="text" id="address" name="address" placeholder="Район, улица (по желанию)" />
+          </div>
+          <div class="field">
+            <label for="time">Удобное время</label>
+            <select id="time" name="time">
+              <option value="">Не важно</option>
+              <option>Утро 9–12</option>
+              <option>День 12–17</option>
+              <option>Вечер 17–21</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="comment">Комментарий</label>
+            <textarea id="comment" name="comment" placeholder="Пожелания, количество комнат, наличие животных…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Отправить в WhatsApp</button>
+          <p class="form-foot">Без спама. Только ваш расчёт. <strong>Уже 1055+ клиентов</strong> доверяют нам.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta reveal">
+    <div class="container">
+      <h2>Готовы к идеальной чистоте?</h2>
+      <p>Напишите сейчас — свободные даты разбирают быстро.</p>
+      <a class="btn btn-white btn-lg" href="https://wa.me/77029367678" target="_blank" rel="noopener">Написать в WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">Aroma<span>Cleaning</span></div>
+        <p>Профессиональный клининг в Астане.</p>
+        <div class="socials">
+          <a href="https://wa.me/77029367678" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg width="22" height="22" viewBox="0 0 24 24" class="icon-wa" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/aroma__cleaning" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r="1.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <ul>
+          <li><a href="tel:+77029367678">+7 702 936 7678</a></li>
+          <li><a href="https://wa.me/77029367678" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li>Астана, Казахстан</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="#why">Почему мы</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#form">Заявка</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">© Aroma Cleaning. Информация на сайте не является публичной офертой.</div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/77029367678" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
+    <svg width="24" height="24" viewBox="0 0 24 24" class="icon-wa" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <script>
+    (function () {
+      var nav = document.getElementById("navbar");
+      function onScroll() {
+        if (window.scrollY > 24) nav.classList.add("scrolled");
+        else nav.classList.remove("scrolled");
+      }
+      window.addEventListener("scroll", onScroll, { passive: true });
+      onScroll();
+
+      function getSundayEnd() {
+        var now = new Date();
+        var end = new Date(now);
+        var dow = now.getDay();
+        if (dow === 0) {
+          end.setHours(23, 59, 59, 999);
+          if (now <= end) return end;
+          end.setDate(end.getDate() + 7);
+          end.setHours(23, 59, 59, 999);
+          return end;
+        }
+        var days = 7 - dow;
+        end.setDate(end.getDate() + days);
+        end.setHours(23, 59, 59, 999);
+        return end;
+      }
+
+      function updateTimer() {
+        var el = document.getElementById("timer");
+        if (!el) return;
+        var end = getSundayEnd();
+        var diff = end - Date.now();
+        if (diff <= 0) diff = 0;
+        var d = Math.floor(diff / 86400000);
+        var h = Math.floor((diff % 86400000) / 3600000);
+        var m = Math.floor((diff % 3600000) / 60000);
+        var s = Math.floor((diff % 60000) / 1000);
+        el.textContent =
+          String(d).padStart(2, "0") + "д : " +
+          String(h).padStart(2, "0") + "ч : " +
+          String(m).padStart(2, "0") + "м : " +
+          String(s).padStart(2, "0") + "с";
+      }
+      setInterval(updateTimer, 1000);
+      updateTimer();
+
+      var revealEls = document.querySelectorAll(".reveal");
+      var revObs = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) e.target.classList.add("visible");
+          });
+        },
+        { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      );
+      revealEls.forEach(function (el) { revObs.observe(el); });
+
+      function easeOutCubic(t) {
+        return 1 - Math.pow(1 - t, 3);
+      }
+
+      function animateCount(el, target, duration, suffix, prefix) {
+        suffix = suffix || "";
+        prefix = prefix || "";
+        var start = 0;
+        var startTime = null;
+        function step(ts) {
+          if (!startTime) startTime = ts;
+          var p = Math.min((ts - startTime) / duration, 1);
+          var val = Math.round(start + (target - start) * easeOutCubic(p));
+          el.textContent = prefix + val + suffix;
+          if (p < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      }
+
+      var statObs = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            var span = entry.target;
+            if (span.dataset.done) return;
+            span.dataset.done = "1";
+            var target = parseFloat(span.dataset.count);
+            var suffix = span.dataset.suffix || "";
+            var prefix = span.dataset.prefix || "";
+            if (isNaN(target)) return;
+            animateCount(span, target, 1600, suffix, prefix);
+          });
+        },
+        { threshold: 0.35 }
+      );
+      document.querySelectorAll(".stat-num span[data-count]").forEach(function (s) {
+        statObs.observe(s);
+      });
+
+      document.querySelectorAll(".accordion-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var id = btn.getAttribute("data-acc");
+          var panel = document.getElementById("panel-" + id);
+          var open = btn.getAttribute("aria-expanded") === "true";
+          document.querySelectorAll(".accordion-btn").forEach(function (b) {
+            if (b !== btn) {
+              b.setAttribute("aria-expanded", "false");
+              var pid = b.getAttribute("data-acc");
+              var p = document.getElementById("panel-" + pid);
+              if (p) p.classList.remove("open");
+            }
+          });
+          btn.setAttribute("aria-expanded", open ? "false" : "true");
+          if (panel) panel.classList.toggle("open", !open);
+        });
+      });
+    })();
+
+    function sendToWhatsApp() {
+      var nameEl = document.getElementById("name");
+      var phoneEl = document.getElementById("phone");
+      var name = nameEl.value.trim();
+      var phone = phoneEl.value.trim();
+      var fn = document.getElementById("field-name");
+      var fp = document.getElementById("field-phone");
+      fn.classList.remove("error");
+      fp.classList.remove("error");
+      if (!name) {
+        fn.classList.add("error");
+        nameEl.focus();
+        return;
+      }
+      if (!phone) {
+        fp.classList.add("error");
+        phoneEl.focus();
+        return;
+      }
+      var serviceEl = document.getElementById("service");
+      var service = serviceEl.value;
+      var fs = document.getElementById("field-service");
+      fs.classList.remove("error");
+      if (!service) {
+        fs.classList.add("error");
+        serviceEl.focus();
+        return;
+      }
+      var area = document.getElementById("area").value;
+      var address = document.getElementById("address").value;
+      var time = document.getElementById("time").value;
+      var comment = document.getElementById("comment").value;
+      var msg =
+        "*ЗАЯВКА — Aroma Cleaning*\n\n" +
+        "Имя: " + name + "\n" +
+        "Телефон: " + phone + "\n" +
+        "Услуга: " + service + "\n" +
+        "Площадь: " + (area || "—") + " м²\n" +
+        "Адрес: " + (address || "—") + "\n" +
+        "Время: " + (time || "—") + "\n" +
+        "Комментарий: " + (comment || "—");
+      window.open("https://wa.me/77029367678?text=" + encodeURIComponent(msg), "_blank");
+    }
+  </script>
+</body>
+</html>
