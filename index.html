@@ -489,6 +489,136 @@
       color: var(--text-muted);
       line-height: 1.65;
     }
+    .accordion-price-row {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+    .price-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 14px;
+      border-radius: 10px;
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.875rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      box-shadow: 0 4px 16px var(--primary-glow);
+    }
+    .accordion-alert {
+      margin-top: 14px;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--surface-2);
+      box-shadow: 0 0 0 1px var(--primary-glow);
+    }
+    .accordion-alert__icon {
+      flex-shrink: 0;
+      line-height: 1.4;
+      font-size: 1.1rem;
+    }
+    .accordion-alert p {
+      margin: 0;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+    .accordion-alert__lead {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* Что входит в уборку — по зонам */
+    .included-rooms {
+      padding-top: 48px;
+      padding-bottom: 64px;
+    }
+    .included-rooms__lead {
+      margin: 0;
+      font-size: 1.1rem;
+      line-height: 1.65;
+      color: var(--text-muted);
+      max-width: 38em;
+    }
+    .included-rooms__lead em {
+      font-style: normal;
+      color: var(--text);
+      font-weight: 600;
+    }
+    .included-rooms__grid {
+      display: grid;
+      gap: 20px;
+    }
+    @media (min-width: 900px) {
+      .included-rooms__grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .included-rooms__card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .included-rooms__card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+    .included-rooms__card h3 {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: 1.05rem;
+      margin: 0 0 16px;
+      color: var(--secondary);
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .check-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin-bottom: 10px;
+    }
+    .check-list li:last-child {
+      margin-bottom: 0;
+    }
+    .check-list li > span:last-child {
+      min-width: 0;
+      word-break: break-word;
+    }
+    .check-icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      margin-top: 2px;
+      color: var(--primary);
+    }
+    .included-rooms__grid .included-rooms__card.reveal:nth-child(1) {
+      transition-delay: 0.05s;
+    }
+    .included-rooms__grid .included-rooms__card.reveal:nth-child(2) {
+      transition-delay: 0.12s;
+    }
+    .included-rooms__grid .included-rooms__card.reveal:nth-child(3) {
+      transition-delay: 0.18s;
+    }
 
     /* Guarantee */
     .guarantee {
@@ -1000,10 +1130,10 @@
         </article>
 
         <article class="card hit reveal">
-          <span class="card-badge">ПОПУЛЯРНЫЙ</span>
+          <span class="card-badge">ХИТ</span>
           <h3>Всё включено</h3>
           <div class="card-price">от 1200 ₸/м²</div>
-          <p class="card-sub">«Максимальный результат — ни о чём не думайте»</p>
+          <p class="card-sub">«Генеральная уборка + окна, парогенератор, шторы, техника и мебель — один пакет, без сюрпризов в смете»</p>
           <button type="button" class="accordion-btn" aria-expanded="false" data-acc="g6">
             Что входит
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
@@ -1012,15 +1142,116 @@
             <div class="accordion-panel-inner">
               <ul>
                 <li>Генеральная уборка</li>
-                <li>Новые салфетки</li>
-                <li>Мытьё кухонного оборудования внутри и снаружи</li>
-                <li>Отпаривание штор</li>
-                <li>Эко-чистка мебели и матрасов парогенератором</li>
+                <li>Новые салфетки для уборки</li>
+                <li>Мытьё всего кухонного оборудования (внутри и снаружи)</li>
+                <li>Стирка / отпаривание штор</li>
+                <li>Эко-чистка мягкой мебели и матрасов (парогенератором)</li>
                 <li>Мытьё всех окон изнутри и снаружи</li>
                 <li>Дезинфекция санузлов парогенератором</li>
               </ul>
+              <div class="accordion-price-row">
+                <span class="price-tag">Стоимость: 1200 ₸ / м²</span>
+              </div>
+              <div class="accordion-alert" role="note">
+                <span class="accordion-alert__icon" aria-hidden="true">⚠️</span>
+                <p><span class="accordion-alert__lead">Примечание.</span> В зимний период окна снаружи не моем.</p>
+              </div>
             </div>
           </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section included-rooms" id="included-rooms" aria-labelledby="included-rooms-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 id="included-rooms-title">Что входит в уборку?</h2>
+        <p class="included-rooms__lead">Мы убираем не поверхностно — <em>а тщательно, включая детали.</em></p>
+      </div>
+      <div class="included-rooms__grid">
+        <article class="included-rooms__card reveal">
+          <h3>Во всех комнатах</h3>
+          <ul class="check-list">
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Мытьё окон внутри</span>
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Обеспыливание стен</span>
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Удаление пыли с внешних фасадов мебели</span>
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Протирка люстр (бра, плафоны, 2–3 рожка)</span>
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Удаление пыли с предметов интерьера и открытых полок</span>
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Мытьё радиаторов и батарей</span>
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Мытьё дверей, дверных ручек, розеток и выключателей</span>
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Сухая чистка мягкой мебели, ковров и полов пылесосом</span>
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Мытьё полов и плинтусов</span>
+            </li>
+          </ul>
+        </article>
+        <article class="included-rooms__card reveal">
+          <h3>На кухне</h3>
+          <ul class="check-list">
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Влажная уборка кухонной мебели снаружи, удаление жировых отложений</span>
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Чистка и дезинфекция сантехники (раковина, смесители)</span>
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Мытьё кухонной техники снаружи (плита, духовка, СВЧ-печь, вытяжка)</span>
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Холодильник моется только снаружи</span>
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Мытьё кухонного фартука</span>
+            </li>
+          </ul>
+        </article>
+        <article class="included-rooms__card reveal">
+          <h3>В санузле</h3>
+          <ul class="check-list">
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Мытьё кафельной плитки на всю высоту</span>
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Мытьё и дезинфекция всей сантехники (раковины, унитаз, биде, ванна, душевая кабина, смесители)</span>
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Влажная уборка полочек, зеркал и наружных поверхностей стиральной машины</span>
+            </li>
+          </ul>
         </article>
       </div>
     </div>
